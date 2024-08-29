@@ -1,15 +1,29 @@
-version: "3.9"
+# サービスの定義
 services:
-  app:
-    container_name: rakuni-app
+  # "front"というサービスの設定
+  front:
+    # イメージのビルド情報
+    container_name: front-app
     build:
+      # Dockerイメージをビルドするためのコンテキスト
       context: .
+      # Dockerfileの場所
       dockerfile: Dockerfile
+
+    # ボリュームのマウント設定
     volumes:
-      - type: bind
-        source: ./rakuni-app  # ローカルのrakuni-appディレクトリ
-        target: /usr/src/app  # コンテナ内の作業ディレクトリ
-    command: npm start
+      # ホストの"./front"ディレクトリをコンテナの"/front"にマウント
+      - ./front:/front
+
+    # 作業ディレクトリの設定
+    working_dir: /front
+
+    # コンテナ内で実行されるコマンド
+    command: node
+
+    # 公開用のポート指定。ホスト側:コンテナ側
     ports:
-      - "3000:3000"
-    stdin_open: true
+      - '5173:5173'
+
+    # ttyを有効にする（コンテナと対話的なセッションを可能にする）
+    tty: true
