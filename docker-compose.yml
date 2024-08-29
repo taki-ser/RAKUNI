@@ -9,7 +9,7 @@ services:
       - type: bind
         source: ./rakuni-app  # ローカルのrakuni-appディレクトリ
         target: /usr/src/app  # コンテナ内の作業ディレクトリ
-    command: yarn start
+    command: npm start
     ports:
       - "3000:3000"
     stdin_open: true
