@@ -34,7 +34,7 @@ const App: React.FC = () => {
             <p className="text-lg">当店では、タイ古式/アロママッサージ/リフレ/ヘッドなど様々なメニューをご用意しております。本場タイの熟練技術を体感していただき、全身リラックスしていただけますと幸いです。ほっとできる癒しの空間をご提供いたします。</p>
             {/* <p className="text-lg">また、タイ古式マッサージの施術師の教育を行っています</p> */}
             <img 
-              src="/src/assets/867335_0.jpg" 
+              src="/public/assets/867335_0.jpg" 
               alt="タイ古式マッサージの画像" 
               className="mx-auto mt-6 object-cover w-1/2"
             />
@@ -46,7 +46,7 @@ const App: React.FC = () => {
             <h3 className="text-3xl font-semibold mb-4">Owner</h3>
             <h4 className="text-2xl font-semibold mb-4">ルークミー</h4>
             <img 
-              src="/src/assets/3A89685F-DDA4-4F1C-BBFC-756982909D4D.jpg" 
+              src="/public/assets/3A89685F-DDA4-4F1C-BBFC-756982909D4D.jpg" 
               alt="タイ古式マッサージの画像" 
               className="mx-auto mt-6 rounded-full w-48 h-48 object-cover shadow-lg"
             />
@@ -64,7 +64,7 @@ const App: React.FC = () => {
               <li>リフレクソロジー - 30分</li>
             </ul> */}
             <img
-              src="/src/assets/867336_0.jpg"
+              src="/public/assets/867336_0.jpg"
               alt="タイ古式マッサージの画像"
               className="mx-auto mt-6 "
             />
