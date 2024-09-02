@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+    padding: 0; /* ルート要素のパディングを0にする */
+  }
 body {
     @apply font-body bg-primary;
 }
