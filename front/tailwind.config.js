@@ -6,10 +6,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#4CAF50', // 緑色
+        primary: '#E98E37', // 緑色
       },
       fontFamily: {
-        body: ['"Open Sans"', 'sans-serif'],
+        body: ['"Hiragino Mincho ProN"', 'serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times'], // ヒラギノ明朝とフォールバックフォント
       },
     },
   },
