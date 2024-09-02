@@ -21,7 +21,7 @@ const HeroSection = () => {
     <section
       className="relative bg-cover bg-center"
       style={{
-        backgroundImage: "url('/public/assets/867179_0.jpg')",
+        backgroundImage: "url('/assets/867179_0.jpg')",
         backgroundSize: `${bgScale * 100}%`, // 背景サイズの拡大
         paddingBottom: '56.25%', // 16:9 のアスペクト比を維持するためのパディング
       }}
