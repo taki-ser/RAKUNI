@@ -27,10 +27,10 @@ const HeroSection = () => {
       }}
     >
       {/* グレーオーバーレイ */}
-      <div className="absolute inset-0 bg-gray-800 opacity-10"></div>
-      <div className="absolute top-0 left-0 w-full h-full container mx-auto flex flex-col justify-center items-center z-10">
-        <h2 className="text-5xl text-white font-bold">タイ古式マッサージ「RAKUNI」</h2>
-        <h2 className="text-3xl text-white font-semibold">ラクニへようこそ</h2>
+      <div className="absolute inset-0 bg-gray-800 opacity-10" />
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-10">
+        <h2 className="text-5xl text-white font-bold text-center">タイ古式マッサージ「RAKUNI」</h2>
+        <h2 className="text-3xl text-white font-semibold text-center">ラクニへようこそ</h2>
       </div>
     </section>
   );
